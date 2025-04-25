@@ -9,7 +9,7 @@ export async function getData() {
     metrics: {
       total: 67,
       executed: 28,
-      success: 25,
+      success: 24,
       pending: 39,
     },
     clients: [
@@ -197,7 +197,7 @@ export async function getData() {
       },
       {
         name: "Yuhmak",
-        status: "Success" as const,
+        status: "Failure" as const,
         duration: "3m 45s",
         message: "https://divinf.atlassian.net/browse/DV-33031",
         comment: "Error provocado por configuración faltante de Gitea.",

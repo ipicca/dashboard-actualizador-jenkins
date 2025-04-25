@@ -215,11 +215,9 @@ export function ClientsTable({ clients }: ClientsTableProps) {
               <TableHead>
                 <Button
                   variant="ghost"
-                  onClick={() => toggleSort("duration")}
                   className="flex items-center gap-1 p-0 h-auto font-semibold"
                 >
                   Duración
-                  <ArrowUpDown className="h-4 w-4" />
                 </Button>
               </TableHead>
               <TableHead className="hidden md:table-cell">Update Log</TableHead>
@@ -313,39 +311,6 @@ function ClientDetail({
 
         <div className="col-span-1 font-semibold">Comentario:</div>
         <div className="col-span-3">{client.comment}</div>
-      </div>
-
-      <div className="border-t pt-4">
-        <h3 className="text-lg font-semibold mb-2">
-          Historial de actualizaciones
-        </h3>
-        <div className="space-y-2">
-          <div className="text-sm text-muted-foreground">
-            No hay actualizaciones anteriores disponibles para este cliente.
-          </div>
-        </div>
-      </div>
-
-      <div className="border-t pt-4">
-        <h3 className="text-lg font-semibold mb-2">Información adicional</h3>
-        <div className="grid grid-cols-4 gap-4 text-sm">
-          <div className="col-span-1 font-semibold">ID de Cliente:</div>
-          <div className="col-span-3">
-            CL-
-            {Math.floor(Math.random() * 10000)
-              .toString()
-              .padStart(4, "0")}
-          </div>
-
-          <div className="col-span-1 font-semibold">Fecha de registro:</div>
-          <div className="col-span-3">01/01/2023</div>
-
-          <div className="col-span-1 font-semibold">Última actualización:</div>
-          <div className="col-span-3">25/04/2023</div>
-
-          <div className="col-span-1 font-semibold">Tipo de cliente:</div>
-          <div className="col-span-3">Empresarial</div>
-        </div>
       </div>
     </div>
   );

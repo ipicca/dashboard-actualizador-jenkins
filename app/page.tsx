@@ -3,7 +3,6 @@ import { DashboardShell } from "@/components/dashboard-shell";
 import { StatusCards } from "@/components/status-cards";
 import { ClientsTable } from "@/components/clients-table";
 import { getData } from "@/lib/data";
-import { Footer } from "@/components/footer";
 
 export default async function DashboardPage() {
   const data = await getData();
@@ -29,7 +28,6 @@ export default async function DashboardPage() {
           </div>
         </DashboardShell>
       </div>
-      <Footer />
     </div>
   );
 }
