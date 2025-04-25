@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Actualizador Jenkins",
-  description: "Monitoreo de actualizaciones de versión",
+  description: "Monitoreo de la implementación del actualizador Jenkins",
 };
 
 export default function RootLayout({

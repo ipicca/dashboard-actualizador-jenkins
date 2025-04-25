@@ -95,17 +95,33 @@ export function ClientsTable({ clients }: ClientsTableProps) {
         } else if (sortField === "status") {
           comparison = a.status.localeCompare(b.status);
         } else if (sortField === "duration") {
+          // Manejar casos especiales como "N/A"
+          if (a.duration === "N/A" && b.duration === "N/A") {
+            return 0;
+          }
+          if (a.duration === "N/A") {
+            return sortDirection === "asc" ? -1 : 1; // N/A aparece primero en asc, último en desc
+          }
+          if (b.duration === "N/A") {
+            return sortDirection === "asc" ? 1 : -1; // N/A aparece primero en asc, último en desc
+          }
+
           // Convertir duración a segundos para comparar
           const getDurationInSeconds = (duration: string) => {
-            const parts = duration.split(" ");
-            let seconds = 0;
-            for (let i = 0; i < parts.length; i += 2) {
-              const value = Number.parseInt(parts[i]);
-              const unit = parts[i + 1];
-              if (unit.startsWith("m")) seconds += value * 60;
-              else if (unit.startsWith("s")) seconds += value;
+            try {
+              const parts = duration.split(" ");
+              let seconds = 0;
+              for (let i = 0; i < parts.length; i += 2) {
+                const value = Number.parseInt(parts[i]);
+                const unit = parts[i + 1];
+                if (unit.startsWith("m")) seconds += value * 60;
+                else if (unit.startsWith("s")) seconds += value;
+              }
+              return seconds;
+            } catch (error) {
+              console.error("Error parsing duration:", duration, error);
+              return 0;
             }
-            return seconds;
           };
 
           const aDuration = getDurationInSeconds(a.duration);
@@ -297,6 +313,39 @@ function ClientDetail({
 
         <div className="col-span-1 font-semibold">Comentario:</div>
         <div className="col-span-3">{client.comment}</div>
+      </div>
+
+      <div className="border-t pt-4">
+        <h3 className="text-lg font-semibold mb-2">
+          Historial de actualizaciones
+        </h3>
+        <div className="space-y-2">
+          <div className="text-sm text-muted-foreground">
+            No hay actualizaciones anteriores disponibles para este cliente.
+          </div>
+        </div>
+      </div>
+
+      <div className="border-t pt-4">
+        <h3 className="text-lg font-semibold mb-2">Información adicional</h3>
+        <div className="grid grid-cols-4 gap-4 text-sm">
+          <div className="col-span-1 font-semibold">ID de Cliente:</div>
+          <div className="col-span-3">
+            CL-
+            {Math.floor(Math.random() * 10000)
+              .toString()
+              .padStart(4, "0")}
+          </div>
+
+          <div className="col-span-1 font-semibold">Fecha de registro:</div>
+          <div className="col-span-3">01/01/2023</div>
+
+          <div className="col-span-1 font-semibold">Última actualización:</div>
+          <div className="col-span-3">25/04/2023</div>
+
+          <div className="col-span-1 font-semibold">Tipo de cliente:</div>
+          <div className="col-span-3">Empresarial</div>
+        </div>
       </div>
     </div>
   );

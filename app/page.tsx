@@ -15,7 +15,8 @@ export default async function DashboardPage() {
         <DashboardShell>
           <h1 className="text-2xl font-bold tracking-tight">Dashboard</h1>
           <p className="text-muted-foreground">
-            Resumen del estado y detalles de las actualizaciones de clientes.
+            Resumen del estado y detalles de la implementación del actualizador
+            Jenkins.
           </p>
 
           <StatusCards metrics={data.metrics} />
