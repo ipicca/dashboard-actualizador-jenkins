@@ -1,0 +1,60 @@
+{
+    "metrics": {
+      "total": 67,
+      "executed": 28,
+      "success": 26,
+      "pending": 39
+    },
+    "clients": [
+      {
+        "name": "Acme Corporation",
+        "status": "Success",
+        "duration": "2m 30s",
+        "message": "Update completed successfully with all modules updated to latest version",
+        "comment": "OK"
+      },
+      {
+        "name": "Globex Industries",
+        "status": "Success",
+        "duration": "1m 45s",
+        "message": "System updated with minor configuration changes",
+        "comment": "OK"
+      },
+      {
+        "name": "Initech LLC",
+        "status": "Failure",
+        "duration": "3m 12s",
+        "message": "Update failed due to network timeout during package installation",
+        "comment": "Retry"
+      },
+      {
+        "name": "Umbrella Corp",
+        "status": "Success",
+        "duration": "2m 05s",
+        "message": "All security patches applied successfully",
+        "comment": "OK"
+      },
+      {
+        "name": "Stark Industries",
+        "status": "Failure",
+        "duration": "4m 18s",
+        "message": "Database migration failed due to schema incompatibility",
+        "comment": "Investigate"
+      },
+      {
+        "name": "Wayne Enterprises",
+        "status": "Success",
+        "duration": "1m 59s",
+        "message": "System configuration updated with new parameters",
+        "comment": "OK"
+      },
+      {
+        "name": "Cyberdyne Systems",
+        "status": "Success",
+        "duration": "3m 22s",
+        "message": "All modules updated to version 2.4.1",
+        "comment": "OK"
+      }
+    ]
+  }
+  
