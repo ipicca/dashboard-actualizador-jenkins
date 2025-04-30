@@ -8,9 +8,9 @@ export async function getData() {
   return {
     metrics: {
       total: 67,
-      executed: 28,
-      success: 24,
-      pending: 39,
+      executed: 39,
+      success: 37,
+      pending: 28,
     },
     clients: [
       {
