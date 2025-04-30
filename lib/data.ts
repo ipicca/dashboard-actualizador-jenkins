@@ -92,10 +92,10 @@ export async function getData() {
       },
       {
         name: "Famicred",
-        status: "Failure" as const,
-        duration: "2m 10s",
+        status: "Success" as const,
+        duration: "1m 53s",
         message: "https://divinf.atlassian.net/browse/DV-32994",
-        comment: "Error en el último step al querer pisar la aplicación web",
+        comment: "La actualización se completó sin errores.",
       },
       {
         name: "Finanthia",
@@ -197,10 +197,10 @@ export async function getData() {
       },
       {
         name: "Yuhmak",
-        status: "Failure" as const,
-        duration: "3m 45s",
+        status: "Success" as const,
+        duration: "2m 18s",
         message: "https://divinf.atlassian.net/browse/DV-33031",
-        comment: "Error provocado por configuración faltante de Gitea.",
+        comment: "La actualización se completó sin errores.",
       },
       {
         name: "Zonda",
@@ -211,10 +211,10 @@ export async function getData() {
       },
       {
         name: "Agilcred",
-        status: "Pending" as const,
-        duration: "N/A",
+        status: "Success" as const,
+        duration: "1m 46s",
         message: "https://divinf.atlassian.net/browse/DV-32968",
-        comment: "Actualización productiva pendiente.",
+        comment: "La actualización se completó sin errores.",
       },
       {
         name: "AMPF",
@@ -225,17 +225,17 @@ export async function getData() {
       },
       {
         name: "Argenmax",
-        status: "Pending" as const,
+        status: "Success" as const,
         duration: "N/A",
         message: "https://divinf.atlassian.net/browse/DV-32971",
-        comment: "Actualización productiva pendiente.",
+        comment: "La actualización se completó sin errores.",
       },
       {
-        name: "Bairescard",
-        status: "Pending" as const,
-        duration: "N/A",
+        name: "Baires Card",
+        status: "Success" as const,
+        duration: "4m 22s",
         message: "https://divinf.atlassian.net/browse/DV-32973",
-        comment: "Actualización productiva pendiente.",
+        comment: "La actualización se completó sin errores.",
       },
       {
         name: "Bancodino",
@@ -246,10 +246,10 @@ export async function getData() {
       },
       {
         name: "CDP Santo Tome",
-        status: "Pending" as const,
-        duration: "N/A",
+        status: "Success" as const,
+        duration: "2m 28s",
         message: "https://divinf.atlassian.net/browse/DV-32975",
-        comment: "Actualización productiva pendiente.",
+        comment: "La actualización se completó sin errores.",
       },
       {
         name: "Credicuotas",
@@ -274,17 +274,24 @@ export async function getData() {
       },
       {
         name: "Creditos del Plata",
-        status: "Pending" as const,
-        duration: "N/A",
+        status: "Success" as const,
+        duration: "1m 58s",
         message: "https://divinf.atlassian.net/browse/DV-32985",
-        comment: "Actualización productiva pendiente.",
+        comment: "La actualización se completó sin errores.",
+      },
+      {
+        name: "Servicred",
+        status: "Success" as const,
+        duration: "3m 17s",
+        message: "https://divinf.atlassian.net/browse/DV-33096",
+        comment: "La actualización se completó sin errores.",
       },
       {
         name: "CrediXT",
-        status: "Pending" as const,
-        duration: "N/A",
+        status: "Succes" as const,
+        duration: "1m 29s",
         message: "https://divinf.atlassian.net/browse/DV-32986",
-        comment: "Actualización productiva pendiente.",
+        comment: "La actualización se completó sin errores.",
       },
       {
         name: "Creser",
@@ -323,10 +330,10 @@ export async function getData() {
       },
       {
         name: "Financialo",
-        status: "Pending" as const,
-        duration: "N/A",
+        status: "Success" as const,
+        duration: "3m 22s",
         message: "https://divinf.atlassian.net/browse/DV-32995",
-        comment: "Actualización productiva pendiente.",
+        comment: "La actualización se completó sin errores.",
       },
       {
         name: "Finrap",
@@ -407,10 +414,10 @@ export async function getData() {
       },
       {
         name: "Mejor Credito",
-        status: "Pending" as const,
-        duration: "N/A",
+        status: "Success" as const,
+        duration: "1m 59s",
         message: "https://divinf.atlassian.net/browse/DV-33011",
-        comment: "Actualización productiva pendiente.",
+        comment: "La actualización se completó sin errores.",
       },
       {
         name: "Mutwo",
@@ -456,10 +463,10 @@ export async function getData() {
       },
       {
         name: "Vivecred",
-        status: "Pending" as const,
-        duration: "N/A",
+        status: "Success" as const,
+        duration: "1m 58s",
         message: "https://divinf.atlassian.net/browse/DV-33027",
-        comment: "Actualización productiva pendiente.",
+        comment: "La actualización se completó sin errores.",
       },
       {
         name: "Yolo",
@@ -470,10 +477,10 @@ export async function getData() {
       },
       {
         name: "Zencred",
-        status: "Pending" as const,
-        duration: "N/A",
+        status: "Success" as const,
+        duration: "1m 48s",
         message: "https://divinf.atlassian.net/browse/DV-33032",
-        comment: "Actualización productiva pendiente.",
+        comment: "La actualización se completó sin errores.",
       },
     ],
   }
