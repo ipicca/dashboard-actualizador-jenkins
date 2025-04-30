@@ -288,7 +288,7 @@ export async function getData() {
       },
       {
         name: "CrediXT",
-        status: "Succes" as const,
+        status: "Success" as const,
         duration: "1m 29s",
         message: "https://divinf.atlassian.net/browse/DV-32986",
         comment: "La actualización se completó sin errores.",
