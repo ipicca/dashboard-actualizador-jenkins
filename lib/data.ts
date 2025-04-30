@@ -8,9 +8,9 @@ export async function getData() {
   return {
     metrics: {
       total: 67,
-      executed: 39,
-      success: 37,
-      pending: 28,
+      executed: 40,
+      success: 38,
+      pending: 27,
     },
     clients: [
       {
@@ -302,10 +302,10 @@ export async function getData() {
       },
       {
         name: "Dash",
-        status: "Pending" as const,
-        duration: "N/A",
+        status: "Success" as const,
+        duration: "27m 1s",
         message: "https://divinf.atlassian.net/browse/DV-32991",
-        comment: "Actualización productiva pendiente.",
+        comment: "La actualización se completó sin errores.",
       },
       {
         name: "Dialcore",
